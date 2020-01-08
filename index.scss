@@ -1,0 +1,82 @@
+@import "variable";
+
+%border-size {
+    //border: solid 1px red;
+    border-style: solid;
+    border-color: green;
+    border-width: 1px;
+    margin: 100px 50px;
+    padding: 100px 500px;
+}
+
+h1 {
+    color: $red-color;
+    font-size: $large;
+    text-align: $align-center;
+}
+
+p {
+    font-size: $large;
+}
+
+main {
+    p {
+        @extend %border-size;
+    }
+}
+
+.blue-color {
+    color: $blue-color;
+}
+
+.container {
+	width:700px;
+	margin:auto;
+}
+
+.header { 
+	padding: 30px 40px; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.addBtn { 
+	padding: 10px; 
+    background: #d9d9d9;
+    border-radius: 5px;
+	color: #555; 
+	float: left; 
+	text-align: center; 
+	font-size: 16px; 
+	cursor: pointer; 
+    transition: 0.3s;
+    margin-left: 5px;
+} 
+
+.addBtn:hover {
+	 background-color: #bbb; 
+	}
+
+.list {
+    border: solid orange;
+    border-radius: 5px;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+input { 
+    border: solid black;
+    border-radius: 5px;
+	width: 75%; 
+	padding: 10px; 
+	float: left; 
+	font-size: 16px; 
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
