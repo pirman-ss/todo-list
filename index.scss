@@ -35,14 +35,14 @@ main {
 }
 
 .header { 
-	padding: 30px 40px; 
+	padding: 30px 0px 20px 0px; 
     text-align: center;
     display: flex;
     justify-content: center;
 }
 
 .addBtn { 
-	padding: 10px; 
+	padding: 15px; 
     background: #d9d9d9;
     border-radius: 5px;
 	color: #555; 
@@ -61,6 +61,7 @@ main {
 .list {
     border: solid orange;
     border-radius: 5px;
+    height: auto;
 }
 
 .list-item {
@@ -72,7 +73,7 @@ main {
 input { 
     border: solid black;
     border-radius: 5px;
-	width: 75%; 
+	width: 88%; 
 	padding: 10px; 
 	float: left; 
 	font-size: 16px; 
